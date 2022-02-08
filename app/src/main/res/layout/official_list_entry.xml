@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/officialTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#541B6C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Official Title" />
+
+    <TextView
+        android:id="@+id/officialName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#541B6C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/officialParty"
+        app:layout_constraintEnd_toStartOf="@+id/officialParty"
+        app:layout_constraintTop_toTopOf="@+id/officialParty"
+        tools:text="Colin H. Kieny" />
+
+    <TextView
+        android:id="@+id/officialParty"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#541B6C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officialTitle"
+        tools:text="(Republican Party)" />
+
+    <ImageView
+        android:id="@+id/seperator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/seperatorimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officialParty"
+        app:srcCompat="@drawable/separator" />
+</androidx.constraintlayout.widget.ConstraintLayout>

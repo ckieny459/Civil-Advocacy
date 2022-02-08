@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">kienyColin_CSC372_assignment4_civilAdvocacy</string>
+    <string name="string_about" />
+    <string name="zip_city">Zip/City</string>
+    <string name="about">About</string>
+    <string name="seperatorimage">seperatorImage</string>
+    <string name="address">Address:</string>
+    <string name="phone">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="website">Website:</string>
+    <string name="civil_advocacy">Civil Advocacy</string>
+</resources>
